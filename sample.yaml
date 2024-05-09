@@ -1,0 +1,7 @@
+sample:
+  description: Qorvo uwb (ultra-wide band) DWM3000 application starting template to use with Zephyr applications.
+    application
+  name: qorvo uwb (ultra-wide band) DWM3000 application starting template
+common:
+    tags: introduction
+

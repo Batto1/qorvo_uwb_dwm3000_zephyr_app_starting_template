@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: Apache-2.0
+
+	
+menu "hw_modules"
+
+# rsource "detachable/Kconfig"
+# rsource "main_processor/Kconfig"
+# rsource "onboard/Kconfig"
+
+rsource "qorvo_uwb_dwm3000/Kconfig"
+ 
+
+endmenu

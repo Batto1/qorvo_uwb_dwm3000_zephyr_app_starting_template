@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+
+	
+menu "app"
+
+rsource "core/Kconfig"
+rsource "external_interfaces/Kconfig"
+rsource "hw_modules/Kconfig"
+rsource "sw_modules/Kconfig"
+
+endmenu

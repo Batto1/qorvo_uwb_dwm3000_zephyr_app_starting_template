@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+
+	
+menu "qorvo_uwb_dwm3000"
+
+# todo: if configurations inside the dwm3000 module is later configured as Kconfig congiration, this file should be used.
+ 
+
+endmenu
