@@ -6,4 +6,26 @@ menu "qorvo_uwb_dwm3000"
 # todo: if configurations inside the dwm3000 module is later configured as Kconfig congiration, this file should be used.
  
 
+menuconfig QORVO_UWB_DWM3000
+	bool "Enable Qorvo UWB (Ultra-wide band) functionality for DWM3000"
+	default n
+	select SPI
+	help
+	  Enables or disables Qorvo UWB (Ultra-wide band) functionality for DWM3000.
+
+
+if QORVO_UWB_DWM3000
+
+# config SPI
+# 	default y
+
+endif # QORVO_UWB_DWM3000
+
+
+
+
+
+
+
+
 endmenu

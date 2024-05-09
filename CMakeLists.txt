@@ -1,6 +1,4 @@
 # SPDX-License-Identifier: Apache-2.0
-
-
 cmake_minimum_required(VERSION 3.20.0)
 
 ## !!!
@@ -12,7 +10,17 @@ cmake_minimum_required(VERSION 3.20.0)
 # set one setting first. It's the prj.conf because otherwise it's omitted. 
 set(CONF_FILE "prj.conf")
 # and then follow the syntax given below
-# set(CONF_FILE "${CONF_FILE};conf/common/example-conf1.conf")
+set(CONF_FILE "${CONF_FILE};conf/common/qorvo-uwb-dwm3000.conf")
+
+
+
+
+set(DTS_ROOT   "${CMAKE_CURRENT_SOURCE_DIR}")
+set(BOARD_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
+set(SHIELD qorvo_dwm3000)
+
+set(BOARD nrf52840dk_nrf52840)
+
 
 
 
