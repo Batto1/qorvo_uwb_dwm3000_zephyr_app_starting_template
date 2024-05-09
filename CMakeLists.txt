@@ -5,12 +5,14 @@ cmake_minimum_required(VERSION 3.20.0)
 ## WARNING: After setting new configuration files, delete the build file and create a build configuration again 
 ## !!!
 
+## Note: Below configuration made for selecting .conf files and setting boards or dts files should be kept in this top-level CMakeLists.txt, otherwise it was observed some unknown reason erroneous behaviour where configurations inside sub CMakeLists.txt were omitted when those sub CMakeLists.txt files were added here using 'add_subdirectory(example_folder_name)'
 
 # Below configuration setting has to be made before "find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})" line.
 # set one setting first. It's the prj.conf because otherwise it's omitted. 
 set(CONF_FILE "prj.conf")
 # and then follow the syntax given below
 set(CONF_FILE "${CONF_FILE};conf/common/qorvo-uwb-dwm3000.conf")
+# set(CONF_FILE "${CONF_FILE};conf/common/qorvo-uwb-dwm3000-debug-and-log.conf")
 
 
 
