@@ -85,7 +85,7 @@ int openspi(void)
     cs_ctrl.delay = 0U;
     cs_ctrl.gpio.dt_flags = DWM_CS_FLAGS;
     for (int i=0; i < SPI_CFGS_COUNT; i++) {
-        spi_cfgs[i].cs = cs_ctrl;
+        spi_cfgs[i].cs = &cs_ctrl;
     }
 
     gpio_pin_set(cs_ctrl.gpio.port, DWM_CS_PIN, 1);
